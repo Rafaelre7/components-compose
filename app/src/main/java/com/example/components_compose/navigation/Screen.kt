@@ -1,8 +1,10 @@
 package com.example.components_compose.navigation
 
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class Screen (val route: String, val title: String){
@@ -11,15 +13,15 @@ sealed class Screen (val route: String, val title: String){
     ): Screen(route, title){
         object Splash: Screen("splash_screen","SplashScreen")
         object HomeScreen: DrawerScreen("HomeScreen", "Home", Icons.Filled.Home)
-        object MakeItEasyOne: DrawerScreen("HomeScreen", "MakeItEasyOne", Icons.Filled.Favorite)
-        object MakeItEasyTwo: DrawerScreen("HomeScreen", "MakeItEasyTwo", Icons.Filled.Favorite)
-        object MakeItEasyThree: DrawerScreen("HomeScreen", "MakeItEasyThree", Icons.Filled.Favorite)
+        object Favoritos: DrawerScreen("Favoritos", "Favoritos", Icons.Filled.Favorite)
+        object Email: DrawerScreen("Email", "Email", Icons.Filled.Email)
+        object Buscar: DrawerScreen("Buscar", "Buscar", Icons.Filled.Search)
     }
 }
 
 val screenDrawer = listOf(
     Screen.DrawerScreen.HomeScreen,
-    Screen.DrawerScreen.MakeItEasyOne,
-    Screen.DrawerScreen.MakeItEasyTwo,
-    Screen.DrawerScreen.MakeItEasyThree
+    Screen.DrawerScreen.Favoritos,
+    Screen.DrawerScreen.Email,
+    Screen.DrawerScreen.Buscar
 )

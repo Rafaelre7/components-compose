@@ -19,6 +19,17 @@ fun SetupNavGraph(navController: NavHostController){
         composable(route = Screen.DrawerScreen.HomeScreen.route){
             NavigationDrawer(navController = navController)
         }
+        composable(route = Screen.DrawerScreen.Favoritos.route){
+            NavigationDrawer(navController = navController)
+        }
+
+        composable(route = Screen.DrawerScreen.Email.route){
+            NavigationDrawer(navController = navController)
+        }
+
+        composable(route = Screen.DrawerScreen.Buscar.route){
+            NavigationDrawer(navController = navController)
+        }
     }
 
 
