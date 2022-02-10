@@ -39,15 +39,15 @@ fun Drawer(
                     .padding(20.dp)
             ) {
                 Text(
-                    text = "Make It Easy",
-                    fontSize = 25.sp,
+                    text = "Componenents Compose",
+                    fontSize = 18.sp,
                     textAlign = TextAlign.Center,
                     fontWeight = FontWeight.Bold,
                     color = Color.White
                 )
                 Text(
                     text = "v $versionName",
-                    fontSize = 25.sp,
+                    fontSize = 16.sp,
                     textAlign = TextAlign.Center,
                     fontWeight = FontWeight.Bold,
                     color = Color.White
